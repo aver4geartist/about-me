@@ -1,45 +1,26 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Courier', monospace; /* Set Courier for everything */
-    background: linear-gradient(180deg, #50e916, #00b300); /* Smooth gradient from top to bottom */
+    background: linear-gradient(180deg, #88f96d, #50e916); /* Light green gradient */
     color: #333; /* Default text color dark */
     padding: 20px;
-    height: 100vh; /* Makes sure the gradient covers the full height of the page */
+    height: 100vh; /* Full height of the page */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Align content vertically */
-    align-items: center; /* Align content horizontally */
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #50e916; /* Lime green header */
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: bold; /* Bold header text */
-}
-
-h1 {
-    color: #333; /* Dark text for the header */
-    font-size: 3rem;
-}
-
-#profile {
-    text-align: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #profile img {
     width: 150px;
     border-radius: 50%;
     margin-top: 15px;
+    border: 5px solid #00ffcc; /* Cyan-green border */
+    padding: 5px; /* Adds space between the image and border */
+}
+
+#profile {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #info ul {
@@ -51,10 +32,4 @@ h1 {
 #info li {
     margin-bottom: 10px; /* Space between items */
     color: #333; /* Dark text color */
-}
-
-
-/* Remove the white gradient and footer */
-body::after {
-    content: none;
 }
