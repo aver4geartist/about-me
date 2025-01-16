@@ -30,26 +30,15 @@ header p {
     margin-bottom: 20px;
 }
 
-#info ul {
+#info ul, #favorites ul {
     list-style-type: disc; /* Default bullet points */
     padding-left: 20px; /* Space from the left */
     font-size: 1.2rem; /* Bigger font */
 }
 
-#info li {
+#info li, #favorites li {
     margin-bottom: 10px; /* Space between items */
     color: #333; /* Dark text color */
-}
-
-#favorites ul {
-    list-style-type: circle; /* Different style of bullet points */
-    padding-left: 20px; /* Space from the left */
-    font-size: 1.2rem;
-}
-
-#favorites li {
-    margin-bottom: 10px;
-    color: #333;
 }
 
 #ocs {
@@ -62,22 +51,24 @@ header p {
     justify-content: space-around;
     margin-top: 20px;
     align-items: center;
+    width: 100%; /* Full width */
 }
 
 .divider {
-    width: 5px; /* Increased width for a longer line */
+    width: 10px; /* Increased width for a thicker divider line */
     background-color: #333;
-    height: 300px; /* Increased height of the divider */
-    margin: 0 20px;
+    height: 400px; /* Taller divider */
+    margin: 0 40px; /* Added spacing between the OC boxes */
 }
 
 .oc {
-    background-color: transparent; /* Make the background transparent */
+    background-color: transparent; /* Transparent background */
     border: 2px solid #333;
     border-radius: 10px;
-    width: 200px;
-    padding: 10px;
+    width: 250px; /* Larger box width */
+    padding: 20px; /* More padding inside the box */
     text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in box size */
 }
 
 .oc img {
@@ -96,4 +87,13 @@ h2 {
 h3 {
     font-size: 1.5rem;
     margin-top: 10px;
+}
+
+ul ul {
+    list-style-type: circle; /* Use circles for nested lists */
+    margin-left: 20px; /* Indent nested lists */
+}
+
+ul ul li {
+    font-size: 1.1rem; /* Slightly smaller font for nested list items */
 }
