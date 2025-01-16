@@ -13,8 +13,8 @@ body {
     height: 100vh; /* Makes sure the gradient covers the full height of the page */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative; /* For positioning the gradient */
+    justify-content: center; /* Align content vertically */
+    align-items: center; /* Align content horizontally */
 }
 
 header {
@@ -42,19 +42,15 @@ h1 {
     margin-top: 15px;
 }
 
-footer {
-    text-align: center;
+#description {
     font-size: 1.2rem;
-    color: #333; /* Dark text for footer */
-    margin-top: 10px; /* Makes footer closer to content */
+    color: #333; /* Dark text for description */
+    margin-top: 20px;
+    font-weight: normal; /* Regular text for the description */
+    max-width: 600px; /* Limit description width */
 }
 
-/* Adding the lime green to white gradient at the bottom */
+/* Remove the white gradient and footer */
 body::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 200px; /* Make the gradient larger */
-    background: linear-gradient(to top, #ffffff, #88f96d); /* Lime green to white gradient */
+    content: none;
 }
