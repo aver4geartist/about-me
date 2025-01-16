@@ -40,3 +40,59 @@ header p {
     margin-bottom: 10px; /* Space between items */
     color: #333; /* Dark text color */
 }
+
+#favorites ul {
+    list-style-type: circle; /* Different style of bullet points */
+    padding-left: 20px; /* Space from the left */
+    font-size: 1.2rem;
+}
+
+#favorites li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#ocs {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ocs-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.oc {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.oc img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 2px;
+    background-color: #333;
+    height: 150px;
+    margin: 0 20px;
+}
