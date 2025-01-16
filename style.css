@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier', monospace; /* Set Courier for everything */
-    background: linear-gradient(180deg, #88f96d, #50e916, #d9f8d6); /* Light green gradient ending in white-green */
+    background: linear-gradient(180deg, #00ffcc, #50e916, #88f96d); /* Brighter and more visible gradient */
     color: #333; /* Default text color dark */
     padding: 20px;
     height: 100vh; /* Full height of the page */
