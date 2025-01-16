@@ -14,8 +14,7 @@ body {
     width: 150px;
     border-radius: 50%;
     margin-top: 15px;
-    border: 5px solid #00ffcc; /* Cyan-green border */
-    padding: 5px; /* Adds space between the image and border */
+    border: 5px solid #5fed12; /* Cyan-green border */
 }
 
 #profile {
