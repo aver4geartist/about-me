@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #50e916, #00b300); /* Gradient background from lime green to darker green */
     color: #333;
     padding: 20px;
 }
@@ -15,10 +15,13 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
+    background-color: #50e916; /* Lime green header */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
-    color: #ff6347; /* Cute coral color for the header */
+    color: #fff; /* White text for contrast */
     font-size: 3rem;
 }
 
