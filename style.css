@@ -57,24 +57,24 @@ header p {
 .divider {
     width: 10px; /* Increased width for a thicker divider line */
     background-color: #333;
-    height: 400px; /* Taller divider */
-    margin: 0 40px; /* Added spacing between the OC boxes */
+    height: 600px; /* Taller divider to fit with the larger boxes */
+    margin: 0 50px; /* More space between the OC boxes */
 }
 
 .oc {
     background-color: transparent; /* Transparent background */
     border: 2px solid #333;
     border-radius: 10px;
-    width: 250px; /* Square width */
-    height: 250px; /* Square height */
-    padding: 20px; /* Padding inside the square */
+    width: 300px; /* Larger width for the boxes */
+    height: 400px; /* Larger height for the boxes */
+    padding: 20px; /* Padding inside the box */
     text-align: center;
     box-sizing: border-box; /* Ensure padding is included in box size */
 }
 
 .oc img {
     width: 100%;
-    height: 100%;
+    height: 200px; /* Adjusted height for the images inside the larger boxes */
     object-fit: cover; /* Ensure image fits within the square */
     border-radius: 5px;
 }
