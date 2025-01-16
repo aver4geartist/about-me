@@ -14,8 +14,16 @@ body {
     width: 150px;
     border-radius: 50%;
     margin-top: 15px;
-    border: 5px solid #1de27b; /* Cyan-green border */
+    border: 5px solid #5fed12;
+    animation: wiggle 1s infinite; /* Animation for wiggle */
 }
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
 
 header {
     text-align: center; /* Center everything inside the header */
