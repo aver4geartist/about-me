@@ -41,23 +41,52 @@ header p {
     color: #333; /* Dark text color */
 }
 
-const audio = document.getElementById("audio");
-const playPauseButton = document.getElementById("play-pause");
-const volumeControl = document.getElementById("volume");
-const trackName = document.getElementById("track-name");
+#music-player {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 2px solid #50e916;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    z-index: 1000;
+}
 
-// Play/Pause functionality
-playPauseButton.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-        playPauseButton.textContent = "⏸️"; // Change button to pause icon
-    } else {
-        audio.pause();
-        playPauseButton.textContent = "▶️"; // Change button back to play icon
-    }
-});
+#music-player h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
 
-// Volume control
-volumeControl.addEventListener("input", (e) => {
-    audio.volume = e.target.value;
-});
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#seek {
+    flex-grow: 1;
+}
+
+#volume {
+    width: 100%;
+}
+
+.volume-control {
+    margin-top: 8px;
+}
+
+#time-display {
+    font-size: 0.9rem;
+    color: #333;
+}
+
