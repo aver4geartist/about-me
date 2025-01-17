@@ -22,26 +22,20 @@ volumeSlider.addEventListener('input', () => {
 
 // update seek slider and time display
 audio.addEventListener('timeupdate', () => {
+    seekSlider.value = (audio.currentTime / audio.duration) * 100 || 0;
     const currentTime = formatTime(audio.currentTime);
     const duration = formatTime(audio.duration);
     timeDisplay.textContent = `${currentTime} / ${duration}`;
-    seekSlider.value = (audio.currentTime / audio.duration) * 100 || 0;
 });
 
 // seek functionality
 seekSlider.addEventListener('input', () => {
-    const seekTo = (seekSlider.value / 100) * audio.duration;
-    audio.currentTime = seekTo;
+    audio.currentTime = (seekSlider.value / 100) * audio.duration;
 });
 
-// format time as mm:ss
+// format time in mm:ss
 function formatTime(seconds) {
     const mins = Math.floor(seconds / 60) || 0;
     const secs = Math.floor(seconds % 60) || 0;
     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
 }
-
-// update duration display on metadata load
-audio.addEventListener('loadedmetadata', () => {
-    timeDisplay.textContent = `0:00 / ${formatTime(audio.duration)}`;
-});
