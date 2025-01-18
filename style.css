@@ -137,7 +137,6 @@ body::before {
     z-index: -1;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.6) 2px, transparent 4px);
     background-size: 50px 50px;
-    background-position: 0 0;
     animation: sparkle-move 3s linear infinite;
 }
 
@@ -148,4 +147,27 @@ body::before {
     100% {
         background-position: -50px -50px;
     }
+}
+
+/* Add Random Sparkle Colors */
+@keyframes sparkle-colors {
+    0% {
+        background-color: rgba(255, 183, 197, 0.6); /* Pink */
+    }
+    25% {
+        background-color: rgba(173, 216, 230, 0.6); /* Light Blue */
+    }
+    50% {
+        background-color: rgba(255, 240, 140, 0.6); /* Yellow */
+    }
+    75% {
+        background-color: rgba(182, 255, 193, 0.6); /* Light Green */
+    }
+    100% {
+        background-color: rgba(255, 183, 197, 0.6); /* Pink */
+    }
+}
+
+body::before {
+    animation: sparkle-move 3s linear infinite, sparkle-colors 5s linear infinite;
 }
