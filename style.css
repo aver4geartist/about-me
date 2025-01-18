@@ -1,14 +1,15 @@
 body {
-    font-family: 'Courier', monospace; /* Set Courier for everything */
-    background: linear-gradient(180deg, #00ffcc, #50e916, #88f96d); /* Brighter and more visible gradient */
-    color: #333; /* Default text color dark */
+    font-family: 'Courier', monospace; /* Still cute */
+    background: linear-gradient(180deg, #00ffcc, #50e916, #88f96d, #c4f9b9); /* Smooth flow of greens */
+    color: #333; /* Still slaying text color */
     padding: 20px;
-    height: 100vh; /* Full height of the page */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 #profile img {
     width: 150px;
