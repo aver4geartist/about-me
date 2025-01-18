@@ -127,6 +127,11 @@ header p {
     color: #666;
 }
 
+/* Removed Play/Pause button background */
+#play-pause {
+    background: none; /* No background */
+}
+
 /* Cutesy Animations */
 @keyframes bounce {
     0%, 100% {
