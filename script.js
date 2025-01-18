@@ -7,13 +7,13 @@ function updateTime() {
     // Determine the time of day and set a cute message
     let greetingMessage = '';
     if (hours >= 5 && hours < 12) {
-        greetingMessage = 'yaaaaaaawwwnnn... good morninnggg!! :3';
+        greetingMessage = 'yaaaaaaawwwnnn... good morninnggg!! >_<';
     } else if (hours >= 12 && hours < 17) {
-        greetingMessage = 'heyyy, good afternoon, cutie!! :3';
+        greetingMessage = 'heyyy, good afternoon, cutie!! ;3';
     } else if (hours >= 17 && hours < 21) {
-        greetingMessage = 'eveninggg, hope u had a great dayy!! :3';
+        greetingMessage = 'woahhh... day over so fast.. o_o';
     } else {
-        greetingMessage = 'gniiight~ sleep well!! :3';
+        greetingMessage = 'gooniteeee... sleep well!! >3<';
     }
 
     // Format the time as HH:MM
