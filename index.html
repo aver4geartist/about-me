@@ -1,60 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about me</title>
-    <link rel="stylesheet" href="style.css"> <!-- link to css -->
-</head>
-<body>
-    <header>
-        <h1>hewlo! welcom to my about me page!!</h1>
-        <p>here hav this handful of info about me ;3</p>
-    </header>
-
-    <section id="profile">
-        <h2>call me average!!</h2>
-        <p>i drawr, gaem, study, gaem, and talk aloot!!</p>
-        <img src="average.png" alt="yes this me" id="average">
-    </section>
-
-    <section id="info">
-        <ul>
-            <li>i silly femboy goober ;3</li>
-            <li>i 15</li>
-            <li>i bi!</li>
-            <li>i ermmm.. from iran.. (disappointed tone)</li>
-        </ul>
-    </section>
-
-    <section id="favorites">
-        <h2>my favorites! ;3</h2>
-        <ul>
-            <li>fav game: roblox > nfs unbound > forknife (fortnite)</li>
-            <li>fav food: fried chicken idjadiajwdiawjdip</li>
-            <li>fav color: soft lime green!</li>
-            <li>gender rating: women > femboys > soft boys - goth boys > boys > men ewww</li>
-        </ul>
-    </section>
-
-    <section id="music-player">
-        <h2>musiccccc!!!!</h2>
-        <div class="player">
-            <audio id="audio" src="song.mp3"></audio>
-            <div class="controls">
-                <button id="play-pause">▶️</button>
-                <input type="range" id="seek" value="0" min="0" max="100" step="1">
-                <span id="time-display">0:00 / 0:00</span>
-            </div>
-            <div class="volume-control">
-                <label for="volume">volume:</label>
-                <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
-            </div>
-            <p>now playing: <span id="track-name">gorgeous (instrumental) ((yes im gorgeous))</span></p>
+<section id="music-player">
+    <h2>musiccccc!!!!</h2>
+     <p>now playing: <span id="track-name">gorgeous</span></p>
+    <div class="player">
+        <audio id="audio" src="song.mp3"></audio>
+        <div class="controls">
+            <button id="play-pause">
+                <img id="play-pause-icon" src="play-icon.png" alt="Play Button" />
+            </button>
+            <input type="range" id="seek" value="0" min="0" max="100" step="1">
+            <span id="time-display">0:00 / 0:00</span>
         </div>
-    </section>
-
-    <!-- link to your external js file -->
-    <script src="music.js"></script>
-</body>
-</html>
+        <div class="volume-control">
+            <label for="volume">volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+        </div>
+     
+    </div>
+</section>
