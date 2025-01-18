@@ -1,0 +1,168 @@
+
+/* Cutesy Femboy Magic Sprinkled CSS 🌸✨ */
+
+body {
+    font-family: 'Courier', monospace;
+    background: linear-gradient(180deg, #e0ffe5, #aaffcc, #88f99a, #50e916, #00ffcc); /* Adorable gradient */
+    color: #222; /* Softer, friendly dark text */
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* No scrollbars for full immersion */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounce 3s infinite; /* Cute lil bounce animation */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #50e916; /* Green pop */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+    animation: fadeIn 2s;
+}
+
+#profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 5px solid #eaffd0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile img:hover {
+    transform: rotate(-10deg) scale(1.1); /* Fun lil wiggle */
+}
+
+#music-player {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border: 3px solid #50e916;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px; /* A bit larger */
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight background tint */
+    animation: floaty 4s ease-in-out infinite; /* A subtle float effect */
+}
+
+#music-player h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #50e916;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.controls img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.controls img:hover {
+    transform: scale(1.2);
+}
+
+#seek, #volume {
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #50e916; /* Vibrant lime slider track */
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+#seek::-webkit-slider-thumb,
+#volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #000; /* Fully dark slider dot */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#seek::-moz-range-thumb,
+#volume::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.volume-control {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+#time-display {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#track-name {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Cutesy Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
