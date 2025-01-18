@@ -1,28 +1,28 @@
+/* Cutesy Femboy Magic Sprinkled CSS 🌸✨ */
+
 body {
     font-family: 'Courier', monospace;
-    background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc);
-    color: #222;
+    background: linear-gradient(180deg, #e0ffe5, #aaffcc, #88f99a, #50e916, #00ffcc); /* Static gradient */
+    color: #222; /* Softer, friendly dark text */
     padding: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-    animation: backgroundChange 10s infinite alternate; /* Smooth background animation */
+    overflow: auto; /* Enable scrolling */
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    animation: bounce 3s infinite;
+    animation: bounce 3s infinite; /* Reverted to bounce animation */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #50e916;
+    color: #50e916; /* Green pop */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    animation: slideIn 1s ease-out; /* Slide-in effect */
 }
 
 header p {
@@ -37,7 +37,6 @@ header p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    animation: floatUp 2s ease-in-out; /* Floating effect */
 }
 
 #profile img {
@@ -48,15 +47,17 @@ header p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#profile img:hover {
-    transform: scale(1.1); /* Image hover scale */
-    transition: transform 0.3s;
+#info ul, #favorites ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
 }
 
-h1, p {
-    animation: fadeInUp 1s ease-out; /* Text fade-in with upward movement */
-}
+/* Removed music player and related elements */
 
+/* Cutesy Animations */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -72,49 +73,5 @@ h1, p {
     }
     to {
         opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes backgroundChange {
-    0% {
-        background: linear-gradient(180deg, #e0ffe5, #88f99a);
-    }
-    50% {
-        background: linear-gradient(180deg, #00ffcc, #50e916);
-    }
-    100% {
-        background: linear-gradient(180deg, #aaffcc, #88f99a);
-    }
-}
-
-@keyframes floatUp {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
     }
 }
