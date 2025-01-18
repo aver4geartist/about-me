@@ -1,3 +1,111 @@
+/* Cutesy Femboy Magic Sprinkled CSS 🌸✨ */
+
+body {
+    font-family: 'courier', monospace;
+    background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc); /* gradient colors you requested */
+    background-size: 200% 200%; /* makes it flow nicely */
+    animation: awesomeGreenGradient 8s ease infinite; /* smooth gradient animation */
+    color: #222;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+@keyframes awesomeGreenGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounce 3s infinite; /* Cute lil bounce animation */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #50e916; /* Green pop */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+    animation: fadeIn 2s;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 5px solid #eaffd0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#music-player {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border: 3px solid #50e916;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px; /* A bit larger */
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight background tint */
+    animation: floaty 4s ease-in-out infinite; /* A subtle float effect */
+}
+
+#music-player h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #50e916;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.controls img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.controls img:hover {
+    transform: scale(1.2);
+}
+
 #seek {
     position: fixed;
     top: 50%; /* places it vertically in the center */
@@ -21,4 +129,42 @@
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#time-display {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#track-name {
+    font-size: 0.9rem;
+    color: none;
+}
+
+/* Cutesy Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
