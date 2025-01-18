@@ -1,7 +1,7 @@
 body {
-    font-family: 'Courier', monospace; /* Still cute */
-    background: linear-gradient(180deg, #00ffcc, #50e916, #88f96d, #c4f9b9); /* Smooth flow of greens */
-    color: #333; /* Still slaying text color */
+    font-family: 'Courier', monospace;
+    background: linear-gradient(180deg, #00ffcc, #50e916, #88f96d, #aaffaa); /* Smoother gradient */
+    color: #333;
     padding: 20px;
     height: 100vh;
     display: flex;
@@ -10,47 +10,17 @@ body {
     align-items: center;
 }
 
-
-#profile img {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 15px;
-    border: 5px solid #5fed12;
-}
-
-header {
-    text-align: center; /* Center everything inside the header */
-}
-
-header p {
-    margin-top: 10px; /* Add some space between the header and the paragraph */
-}
-
-#profile {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#info ul {
-    list-style-type: disc; /* Default bullet points */
-    padding-left: 20px; /* Space from the left */
-    font-size: 1.2rem; /* Bigger font */
-}
-
-#info li {
-    margin-bottom: 10px; /* Space between items */
-    color: #333; /* Dark text color */
-}
-
 #music-player {
     position: fixed;
     bottom: 10px;
-    right: 10px; /* Changed to bottom-right corner */
+    left: 10px;
+    border: 2px solid black; /* Dark outline */
     padding: 10px;
-    border: 2px solid #50e916;
     border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     width: 300px;
     z-index: 1000;
+    background-color: transparent; /* No background */
 }
 
 #music-player h2 {
@@ -72,56 +42,39 @@ header p {
     width: 100%;
 }
 
-#play-pause {
-    background: none; /* No background */
-    border: none; /* Remove border */
-    padding: 0; /* Remove extra padding */
-    cursor: pointer; /* Change to pointer cursor */
-}
-
-#play-pause img {
+.controls img {
     width: 16px;
     height: 16px;
-    display: block; /* Align properly */
+    cursor: pointer;
 }
 
-#seek {
-    flex-grow: 1;
-    height: 4px; /* Slim slider */
-    background: #555; /* Darker slider background */
+#seek, #volume {
+    appearance: none;
+    width: 100%;
+    height: 4px; /* Thinner sliders */
+    background: #333; /* Dark slider background */
     border-radius: 2px;
     outline: none;
-    -webkit-appearance: none;
+    cursor: pointer;
 }
 
 #seek::-webkit-slider-thumb,
 #volume::-webkit-slider-thumb {
-    width: 8px; /* Slim thumb button */
-    height: 8px;
-    background: #333; /* Dark thumb */
-    border: 2px solid #50e916; /* Bright green border for pop */
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #000; /* Fully dark thumb */
     border-radius: 50%;
     cursor: pointer;
-    -webkit-appearance: none;
 }
 
-
-#volume {
-    width: 100%;
-    height: 4px; /* Slim slider */
-    background: #555; /* Darker slider background */
-    border-radius: 2px;
-    outline: none;
-    -webkit-appearance: none;
-}
-
-#volume::-webkit-slider-thumb {
-    width: 8px; /* Slim thumb button */
-    height: 8px;
-    background: #50e916; /* Bright green thumb */
+#seek::-moz-range-thumb,
+#volume::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #000;
     border-radius: 50%;
     cursor: pointer;
-    -webkit-appearance: none;
 }
 
 .volume-control {
