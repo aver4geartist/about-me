@@ -1,27 +1,25 @@
-/* Cutesy Femboy Magic Sprinkled CSS 🌸✨ */
-
 body {
     font-family: 'Courier', monospace;
-    background: linear-gradient(180deg, #e0ffe5, #aaffcc, #88f99a, #50e916, #00ffcc); /* Adorable gradient */
-    color: #222; /* Softer, friendly dark text */
+    background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc); /* Smoothed out gradient */
+    color: #222;
     padding: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto; /* Re-enable scrolling */
+    overflow: auto;
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    animation: bounce 3s infinite; /* Cute lil bounce animation */
+    animation: bounce 3s infinite;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #50e916; /* Green pop */
+    color: #50e916;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -55,10 +53,10 @@ header p {
     padding: 12px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 320px; /* A bit larger */
+    width: 320px;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95); /* Slight background tint */
-    animation: floaty 4s ease-in-out infinite; /* A subtle float effect */
+    background-color: rgba(255, 255, 255, 0.95);
+    animation: floaty 4s ease-in-out infinite;
 }
 
 #music-player h2 {
@@ -96,7 +94,7 @@ header p {
     appearance: none;
     width: 100%;
     height: 4px;
-    background: #50e916; /* Vibrant lime slider track */
+    background: #50e916;
     border-radius: 2px;
     outline: none;
     cursor: pointer;
@@ -114,7 +112,7 @@ header p {
 }
 
 .volume-control {
-    display: none; /* Remove the visual volume control */
+    display: none;
 }
 
 #time-display {
@@ -127,12 +125,10 @@ header p {
     color: none;
 }
 
-/* Removed Play/Pause button background and outline */
 #play-pause {
     background: #FFFFFF;
 }
 
-/* Cutesy Animations */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
