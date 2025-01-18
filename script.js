@@ -24,3 +24,19 @@ function updateTime() {
 // Call the function immediately, then update every minute
 updateTime();
 setInterval(updateTime, 60000);
+
+function copyDiscord() {
+    const discordUser = "smg4shift_bro"; // Replace with your actual Discord username
+    navigator.clipboard.writeText(discordUser).then(() => {
+        const status = document.getElementById('copy-status');
+        status.style.display = 'block';
+        status.textContent = `${discordUser} copied to clipboard!`;
+        
+        setTimeout(() => {
+            status.style.display = 'none';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
