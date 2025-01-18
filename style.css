@@ -1,9 +1,9 @@
-/* Waterfall Gradient Effect with Cascading Animation 🌊✨ */
-
+/* Lively Gradient Effect with Smooth Animation 🌟✨ */
 body {
     font-family: 'courier', monospace;
     background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc);
     background-size: 400% 400%;
+    animation: livelyGradient 15s ease infinite; /* Smooth gradient animation */
     color: #222;
     padding: 20px;
     height: 100vh;
@@ -14,7 +14,8 @@ body {
     overflow: auto;
 }
 
-@keyframes waterfallGradient {
+/* Define the lively gradient animation */
+@keyframes livelyGradient {
     0% {
         background-position: 0% 50%;
     }
