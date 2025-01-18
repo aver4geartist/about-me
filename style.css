@@ -93,14 +93,17 @@ header p {
     -webkit-appearance: none;
 }
 
-#seek::-webkit-slider-thumb {
+#seek::-webkit-slider-thumb,
+#volume::-webkit-slider-thumb {
     width: 8px; /* Slim thumb button */
     height: 8px;
-    background: #50e916; /* Bright green thumb */
+    background: #333; /* Dark thumb */
+    border: 2px solid #50e916; /* Bright green border for pop */
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
 }
+
 
 #volume {
     width: 100%;
