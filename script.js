@@ -27,16 +27,16 @@ setInterval(updateTime, 60000);
 
 // Function to copy Discord username to clipboard
 function copyDiscord() {
-    const discordUser = "average#1234"; // Replace with your actual Discord username
+    const discordUser = "smg4shift_bro"; // Replace with your actual Discord username
     navigator.clipboard.writeText(discordUser).then(() => {
         const status = document.getElementById('copy-status');
         status.style.display = 'block';
-        status.textContent = `${discordUser} copied to clipboard!`;
+        status.textContent = `${discordUser} copied to clipboard! (its correct dont worry)`;
         
         setTimeout(() => {
             status.style.display = 'none';
         }, 2000);
     }).catch(err => {
-        console.error('Failed to copy text: ', err);
+        console.error('failed..: ', err);
     });
 }
