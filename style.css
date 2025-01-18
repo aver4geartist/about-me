@@ -1,10 +1,10 @@
-/* Cutesy Femboy Magic Sprinkled CSS 🌸✨ */
+/* Waterfall Gradient Effect with Cascading Animation 🌊✨ */
 
 body {
     font-family: 'courier', monospace;
     background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc);
-    background-size: 400% 400%; /* Large gradient to make the animation smoother */
-    animation: rainbowGradient 5s ease infinite; /* Rainbow gradient animation */
+    background-size: 400% 400%;
+    animation: waterfallGradient 15s linear infinite; /* Waterfall gradient animation */
     color: #222;
     padding: 20px;
     height: 100vh;
@@ -15,24 +15,25 @@ body {
     overflow: auto;
 }
 
-@keyframes rainbowGradient {
+@keyframes waterfallGradient {
     0% {
         background-position: 0% 50%;
     }
     25% {
-        background-position: 100% 50%;
+        background-position: 50% 50%;
     }
     50% {
-        background-position: 100% 100%;
+        background-position: 100% 50%;
     }
     75% {
-        background-position: 0% 100%;
+        background-position: 50% 50%;
     }
     100% {
         background-position: 0% 50%;
     }
 }
 
+/* Cutesy Header Animations 🌟✨ */
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -41,7 +42,7 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #50e916; /* Green pop */
+    color: #50e916; /* Vibrant green for the header */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -75,10 +76,10 @@ header p {
     padding: 12px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 320px; /* A bit larger */
+    width: 320px;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95); /* Slight background tint */
-    animation: floaty 4s ease-in-out infinite; /* A subtle float effect */
+    background-color: rgba(255, 255, 255, 0.95);
+    animation: floaty 4s ease-in-out infinite;
 }
 
 #music-player h2 {
@@ -114,13 +115,13 @@ header p {
 
 #seek {
     position: fixed;
-    top: 50%; /* places it vertically in the center */
-    right: 10px; /* places it on the right side */
-    transform: translateY(-50%); /* centers it perfectly vertically */
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     appearance: none;
-    width: 20px; /* width of the slider */
-    height: 200px; /* make it tall */
-    background: #50e916; /* same green color as the rest of the theme */
+    width: 20px;
+    height: 200px;
+    background: #50e916;
     border-radius: 10px;
     outline: none;
     cursor: pointer;
@@ -144,10 +145,9 @@ header p {
 
 #track-name {
     font-size: 0.9rem;
-    color: none;
 }
 
-/* Cutesy Animations */
+/* Cutesy Animations 🌸✨ */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
