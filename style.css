@@ -129,8 +129,7 @@ header p {
 
 /* Removed Play/Pause button background and outline */
 #play-pause {
-    background: none; /* No background */
-    outline: none; /* Remove outline */
+    background: #000000;
 }
 
 /* Cutesy Animations */
