@@ -3,22 +3,22 @@
 body {
     font-family: 'courier', monospace;
     background: linear-gradient(180deg, #e0ffe5, #aaffcc, #88f99a, #50e916, #00ffcc);
-    background-size: 400% 400%;
-    animation: gradientAnimation 6s ease infinite; /* brought back animated gradient */
-    color: #222; /* softer, friendly dark text */
+    background-size: 200% 200%; /* make the gradient smoother */
+    animation: awesomeGreenGradient 8s ease infinite; /* animated and bouncy green gradient */
+    color: #222;
     padding: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto; /* enable scrolling */
+    overflow: auto;
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    animation: bounce 3s infinite; /* kept bounce animation */
+    animation: bounce 3s infinite; /* cute lil bounce stays */
 }
 
 header h1 {
@@ -58,7 +58,7 @@ header p {
 }
 
 /* cutesy animations */
-@keyframes gradientAnimation {
+@keyframes awesomeGreenGradient {
     0% {
         background-position: 0% 50%;
     }
