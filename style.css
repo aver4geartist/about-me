@@ -2,9 +2,9 @@
 
 body {
     font-family: 'courier', monospace;
-    background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc); /* gradient colors you requested */
-    background-size: 200% 200%; /* makes it flow nicely */
-    animation: awesomeGreenGradient 8s ease infinite; /* smooth gradient animation */
+    background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc);
+    background-size: 400% 400%; /* Large gradient to make the animation smoother */
+    animation: rainbowGradient 10s ease infinite; /* Rainbow gradient animation */
     color: #222;
     padding: 20px;
     height: 100vh;
@@ -15,12 +15,18 @@ body {
     overflow: auto;
 }
 
-@keyframes awesomeGreenGradient {
+@keyframes rainbowGradient {
     0% {
         background-position: 0% 50%;
     }
-    50% {
+    25% {
         background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
     }
     100% {
         background-position: 0% 50%;
