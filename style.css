@@ -2,7 +2,7 @@
 body {
     font-family: 'courier', monospace;
     background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc); /* Fresh and lively gradient */
-    color: #222;
+    color: #f8f8f8; /* Eye-safe white */
     padding: 20px;
     height: 100vh;
     display: flex;
@@ -21,14 +21,32 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #50e916; /* Vibrant green for the header */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    animation: title-colors 5s linear infinite; /* Dynamic title color animation */
+}
+
+@keyframes title-colors {
+    0% {
+        color: rgba(255, 183, 197, 1); /* Pink */
+    }
+    25% {
+        color: rgba(173, 216, 230, 1); /* Light Blue */
+    }
+    50% {
+        color: rgba(255, 240, 140, 1); /* Yellow */
+    }
+    75% {
+        color: rgba(182, 255, 193, 1); /* Light Green */
+    }
+    100% {
+        color: rgba(255, 183, 197, 1); /* Pink */
+    }
 }
 
 header p {
     margin-top: 10px;
     font-size: 1.2rem;
-    color: #555;
+    color: #f0f0f0; /* Slightly dimmer white for contrast */
 }
 
 #profile {
@@ -118,11 +136,12 @@ header p {
 
 #time-display {
     font-size: 0.9rem;
-    color: #333;
+    color: #f0f0f0;
 }
 
 #track-name {
     font-size: 0.9rem;
+    color: #f0f0f0;
 }
 
 /* Fun Sparkles for the Background */
@@ -137,7 +156,7 @@ body::before {
     z-index: -1;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.6) 2px, transparent 4px);
     background-size: 50px 50px;
-    animation: sparkle-move 3s linear infinite;
+    animation: sparkle-move 3s linear infinite, sparkle-colors 5s linear infinite;
 }
 
 @keyframes sparkle-move {
@@ -149,7 +168,6 @@ body::before {
     }
 }
 
-/* Add Random Sparkle Colors */
 @keyframes sparkle-colors {
     0% {
         background-color: rgba(255, 183, 197, 0.6); /* Pink */
@@ -166,8 +184,4 @@ body::before {
     100% {
         background-color: rgba(255, 183, 197, 0.6); /* Pink */
     }
-}
-
-body::before {
-    animation: sparkle-move 3s linear infinite, sparkle-colors 5s linear infinite;
 }
