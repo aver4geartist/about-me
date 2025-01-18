@@ -18,7 +18,7 @@ function updateTime() {
 
     // Format the time as HH:MM
     const minutes = String(now.getMinutes()).padStart(2, '0');
-    timeElement.textContent = `${greetingMessage} it's ${hours}:${minutes}`;
+    timeElement.textContent = `${greetingMessage} its ${hours}:${minutes} already...`;
 }
 
 // Call the function immediately, then update every minute
