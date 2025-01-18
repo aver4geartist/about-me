@@ -1,27 +1,29 @@
-/* Cutesy Femboy Magic Sprinkled CSS 🌸✨ */
+/* cutesy femboy magic sprinkled css 🌸✨ */
 
 body {
-    font-family: 'Courier', monospace;
-    background: linear-gradient(180deg, #e0ffe5, #aaffcc, #88f99a, #50e916, #00ffcc); /* Static gradient */
-    color: #222; /* Softer, friendly dark text */
+    font-family: 'courier', monospace;
+    background: linear-gradient(180deg, #e0ffe5, #aaffcc, #88f99a, #50e916, #00ffcc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s ease infinite; /* brought back animated gradient */
+    color: #222; /* softer, friendly dark text */
     padding: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto; /* Enable scrolling */
+    overflow: auto; /* enable scrolling */
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    animation: bounce 3s infinite; /* Reverted to bounce animation */
+    animation: bounce 3s infinite; /* kept bounce animation */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #50e916; /* Green pop */
+    color: #50e916; /* green pop */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -55,9 +57,19 @@ header p {
     text-align: left;
 }
 
-/* Removed music player and related elements */
+/* cutesy animations */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
-/* Cutesy Animations */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
