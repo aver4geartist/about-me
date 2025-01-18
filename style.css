@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* No scrollbars for full immersion */
+    overflow: auto; /* Re-enable scrolling */
 }
 
 header {
@@ -127,9 +127,10 @@ header p {
     color: #666;
 }
 
-/* Removed Play/Pause button background */
+/* Removed Play/Pause button background and outline */
 #play-pause {
     background: none; /* No background */
+    outline: none; /* Remove outline */
 }
 
 /* Cutesy Animations */
