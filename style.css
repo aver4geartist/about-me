@@ -124,7 +124,7 @@ header p {
 
 #track-name {
     font-size: 0.9rem;
-    color: #666;
+    color: none;
 }
 
 /* Removed Play/Pause button background and outline */
