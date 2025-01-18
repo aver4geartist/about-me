@@ -1,13 +1,56 @@
+body {
+    font-family: 'Courier', monospace; /* Set Courier for everything */
+    background: linear-gradient(180deg, #00ffcc, #50e916, #88f96d); /* Brighter and more visible gradient */
+    color: #333; /* Default text color dark */
+    padding: 20px;
+    height: 100vh; /* Full height of the page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 5px solid #5fed12;
+}
+
+header {
+    text-align: center; /* Center everything inside the header */
+}
+
+header p {
+    margin-top: 10px; /* Add some space between the header and the paragraph */
+}
+
+#profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info ul {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Space from the left */
+    font-size: 1.2rem; /* Bigger font */
+}
+
+#info li {
+    margin-bottom: 10px; /* Space between items */
+    color: #333; /* Dark text color */
+}
+
 #music-player {
     position: fixed;
     bottom: 10px;
-    right: 10px; /* moved to bottom-right */
-    background-color: transparent; /* remove bg */
+    right: 10px; /* Now it's on the bottom right */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
-    border: 2px solid black; /* black outline */
-    border-radius: 8px; /* subtle rounded corners */
-    box-shadow: none; /* remove shadow */
-    width: 400px; /* stretch it */
+    border: 2px solid #50e916;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 350px; /* Increased width for better stretching */
     z-index: 1000;
 }
 
@@ -15,14 +58,12 @@
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 8px;
-    color: black; /* darker text */
 }
 
 .player {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* align to left for better layout */
-    gap: 10px;
+    align-items: center;
 }
 
 .controls {
@@ -32,32 +73,26 @@
     width: 100%;
 }
 
-#seek, #volume {
-    height: 4px; /* thinner sliders */
-    background: #333; /* dark slider bg */
+#seek {
+    flex-grow: 1;
+    height: 6px; /* Thinner slider */
+    background-color: #ccc;
     border-radius: 5px;
-    appearance: none;
 }
 
-#seek::-webkit-slider-thumb, #volume::-webkit-slider-thumb {
-    appearance: none;
-    width: 12px;
-    height: 12px;
-    background: black; /* black thumb */
-    border-radius: 50%;
-    cursor: pointer;
+#volume {
+    width: 100%;
+    height: 6px; /* Thinner slider */
+    background-color: #ccc;
+    border-radius: 5px;
 }
 
-#seek::-moz-range-thumb, #volume::-moz-range-thumb {
-    width: 12px;
-    height: 12px;
-    background: black; /* black thumb */
-    border-radius: 50%;
-    cursor: pointer;
+.volume-control {
+    margin-top: 8px;
 }
 
 #time-display {
     font-size: 0.9rem;
-    color: black; /* darker text */
-    margin-left: auto; /* push time to the right */
+    color: #333;
+    margin-top: 5px;
 }
