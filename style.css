@@ -11,7 +11,6 @@ body {
     align-items: center;
     overflow: hidden; /* Prevent scrolling */
     position: relative;
-    animation: bg-color-change 5s infinite;
 }
 
 /* Cutesy Header Animations */
@@ -126,21 +125,19 @@ header p {
     font-size: 0.9rem;
 }
 
-/* Background Color Animation */
-@keyframes bg-color-change {
+/* Smoothly Changing Gradient Background */
+@keyframes gradient-shift {
     0% {
-        background: linear-gradient(180deg, #ffb7c5, #add8e6, #fff08c, #b6ffc1);
-    }
-    25% {
-        background: linear-gradient(180deg, #add8e6, #fff08c, #b6ffc1, #ffb7c5);
+        background: linear-gradient(180deg, #00ccff, #88f99a);
     }
     50% {
-        background: linear-gradient(180deg, #fff08c, #b6ffc1, #ffb7c5, #add8e6);
-    }
-    75% {
-        background: linear-gradient(180deg, #b6ffc1, #ffb7c5, #add8e6, #fff08c);
+        background: linear-gradient(180deg, #88f99a, #50e916);
     }
     100% {
-        background: linear-gradient(180deg, #ffb7c5, #add8e6, #fff08c, #b6ffc1);
+        background: linear-gradient(180deg, #50e916, #00ccff);
     }
+}
+
+body {
+    animation: gradient-shift 10s infinite alternate;
 }
