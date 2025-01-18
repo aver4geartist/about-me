@@ -2,7 +2,7 @@
 body {
     font-family: 'courier', monospace;
     background: linear-gradient(180deg, #e0ffe5, #88f99a, #50e916, #00ffcc); /* Fresh and lively gradient */
-    color: #f8f8f8; /* Eye-safe white */
+    color: #222; /* Darker text color for better visibility */
     padding: 20px;
     height: 100vh;
     display: flex;
@@ -46,7 +46,7 @@ header h1 {
 header p {
     margin-top: 10px;
     font-size: 1.2rem;
-    color: #f0f0f0; /* Slightly dimmer white for contrast */
+    color: #444; /* Darker color for contrast */
 }
 
 #profile {
@@ -136,12 +136,12 @@ header p {
 
 #time-display {
     font-size: 0.9rem;
-    color: #f0f0f0;
+    color: #333;
 }
 
 #track-name {
     font-size: 0.9rem;
-    color: #f0f0f0;
+    color: #333;
 }
 
 /* Fun Sparkles for the Background */
