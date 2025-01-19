@@ -133,3 +133,48 @@ body::before {
     80% { opacity: 1; }
     100% { opacity: 0; }
 }
+
+/* Doodles on the sides */
+.side-doodle {
+    position: fixed; /* Makes them stay on the screen */
+    z-index: 5; /* Ensures they stay behind main content */
+    width: 100px; /* Adjust size as needed */
+    opacity: 0.8; /* Slight transparency for subtlety */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Left doodle */
+.left-doodle {
+    top: 20%; /* Adjust vertical positioning */
+    left: 0; /* Stick it to the left */
+    transform: rotate(-10deg); /* Fun angle */
+}
+
+.left-doodle:hover {
+    transform: rotate(0deg) scale(1.1); /* Straighten and zoom on hover */
+}
+
+/* Right doodle */
+.right-doodle {
+    top: 40%; /* Different height for asymmetry */
+    right: 0; /* Stick it to the right */
+    transform: rotate(10deg); /* Fun angle */
+}
+
+.right-doodle:hover {
+    transform: rotate(0deg) scale(1.1); /* Straighten and zoom on hover */
+}
+
+/* (Optional) Add float animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Subtle bounce */
+    }
+}
+
+.side-doodle {
+    animation: float 3s infinite ease-in-out; /* Makes them gently move up and down */
+}
