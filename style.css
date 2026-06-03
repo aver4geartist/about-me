@@ -60,9 +60,10 @@ header nav a {
 .thoughts {
   max-width: 1600px;
   text-align: center;
-  border: 1px solid #cad3f5;
+  border: 1px solid #cba6f7;
   border-radius: 8px;
   margin-bottom: 5px;
+  flex: 1;
 }
 
 .flag-strip {
