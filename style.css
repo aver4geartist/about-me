@@ -8,8 +8,8 @@ header {
 body {
   margin: 0;
   font-family: "Open Sans", system-ui, -apple-system, sans-sherif;
-  background-color: #292c3c;
-  color: #c6d0f5;
+  background-color: #24273a;
+  color: #cad3f5;
 }
 
 h1, h2 {
@@ -19,9 +19,9 @@ h1, h2 {
 }
 
 header p {
-  margin-top: 8px;
+  margin-top: 0px;
   margin-bottom: 0;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 section {
@@ -33,4 +33,10 @@ header nav a {
   color: #8aadf4;
   text-decoration: none;
   margin: 0 10px;
+}
+
+footer {
+  margin: 0;
+  font-family: "Datatype", system-ui, -apple-system, sans-sherif;
+  color: #6e738d;
 }
