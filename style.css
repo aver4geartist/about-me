@@ -6,6 +6,7 @@ header {
   text-align: center;
 }
 body {
+  text-align: center;
   margin: 0;
   font-family: "Open Sans", system-ui, -apple-system, sans-sherif;
   background-color: #24273a;
@@ -39,4 +40,5 @@ footer {
   margin: 0;
   font-family: "Datatype", system-ui, -apple-system, sans-sherif;
   color: #6e738d;
+  font-size: 0.5rem;
 }
