@@ -59,8 +59,9 @@ header nav a {
 .flag-strip {
   background-image: url('flag.svg');
   background-repeat: repeat;
-  height: 480px;
-  width: 800px;
+  background-size: 400px 240px;
+  height: 240px;
+  width: 400px;
 }
 
 footer {
