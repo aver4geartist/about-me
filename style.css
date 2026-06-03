@@ -62,6 +62,8 @@ header nav a {
   background-size: 200px 120px;
   height: 120px;
   width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 footer {
