@@ -65,6 +65,14 @@ header nav a {
   flex: 1;
 }
 
+.thoughts image-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
 .flag-strip {
   background-image: url('flag.svg');
   background-repeat: repeat-x;
