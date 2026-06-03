@@ -73,6 +73,13 @@ header nav a {
   margin: 10px 0;
 }
 
+.thoughts image-row img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
 .flag-strip {
   background-image: url('flag.svg');
   background-repeat: repeat-x;
