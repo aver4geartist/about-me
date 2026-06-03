@@ -67,21 +67,21 @@ footer {
 .btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #b7bdf8;
+  background-color: #8aadf4;
   color: #cad3f5;
   font-family: "Playwrite GB J", system-ui, sans-serif;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 5px;
-  border: 2px solid transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .btn:hover {
-  background-color: #c6a0f6;
+  background-color: #7dc4e4;
   border-color: #cad3f5;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .btn:active {
