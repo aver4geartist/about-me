@@ -60,6 +60,7 @@ header nav a {
 .thoughts {
   max-width: 1600px;
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 5px;
   flex: 1;
 }
