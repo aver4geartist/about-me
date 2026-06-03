@@ -14,3 +14,19 @@ h1, h2 {
   font-family: "Playwrite GB J", system-ui, -apple-system, sans-sherif;
   color: #a6e3a1;
 }
+
+header p {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 left;
+}
+
+header nav a {
+  color: #8aadf4;
+  text-decoration: none;
+  margin: 0 10px;
+}
