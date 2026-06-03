@@ -4,9 +4,9 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: "Open Sans", system-ui, -apple-system, sans-sherif;
   background-color: #292c3c;
-  color: #4c4f69;
+  color: #c6d0f5;
 }
 
 h1 {
@@ -17,6 +17,6 @@ h1 {
 
 h2 {
   margin: 0;
-  font-family: "Open Sans", system-ui, -apple-system, sans-sherif;
-  color: #232634;
+  font-family: "Playwrite GB J", system-ui, -apple-system, sans-sherif;
+  color: #81c8be;
 }
