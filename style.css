@@ -65,7 +65,7 @@ header nav a {
   flex: 1;
 }
 
-.thoughts image-row {
+.thoughts .image-row {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -73,7 +73,7 @@ header nav a {
   margin: 10px 0;
 }
 
-.thoughts image-row img {
+.thoughts .image-row img {
   width: 100%;
   max-width: 500px;
   max-height: 500px;
