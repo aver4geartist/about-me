@@ -60,7 +60,6 @@ header nav a {
 .thoughts {
   max-width: 1600px;
   text-align: center;
-  gap: 20px;
   margin-top: 10px;
   margin-bottom: 5px;
   flex: 1;
@@ -71,6 +70,7 @@ header nav a {
   justify-content: center;
   flex-wrap: wrap;
   margin: 10px 0;
+  gap: 20px;
 }
 
 .thoughts .image-row img {
