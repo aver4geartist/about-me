@@ -67,7 +67,6 @@ header nav a {
 
 .thoughts .image-row {
   display: flex;
-  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
   margin: 10px 0;
@@ -78,6 +77,8 @@ header nav a {
   max-width: 250px;
   max-height: 500px;
   border-radius: 5px;
+  overflow: hidden;
+  display: block;
   object-fit: contain;
 }
 
