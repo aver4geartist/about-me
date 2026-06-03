@@ -75,9 +75,10 @@ header nav a {
 
 .thoughts .image-row img {
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   max-height: 500px;
-  border-radius: 8px;
+  border-radius: 5px;
+  object-fit: contain;
 }
 
 .flag-strip {
