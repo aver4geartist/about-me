@@ -5,10 +5,14 @@
 header {
   text-align: center;
 }
+
 body {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
-  font-family: "Open Sans", system-ui, -apple-system, sans-sherif;
+  text-align: center;
+  font-family: "Open Sans", system-ui, -apple-system, sans-serif;
   background-color: #24273a;
   color: #cad3f5;
 }
@@ -31,9 +35,19 @@ header p {
 }
 
 section {
-  text-align: center;
   max-width: 800px;
-  margin: 0 left;
+  margin: 0 auto;
+}
+
+section ul {
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto 1rem auto;
+}
+
+header nav {
+  margin-top: 5px;
 }
 
 header nav a {
