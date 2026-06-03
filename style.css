@@ -57,13 +57,10 @@ header nav a {
 }
 
 .flag-strip {
-  background-color: #ff0000; /* Bright red - if you see this, CSS is working */
   background-image: url('flag.svg');
   background-repeat: repeat;
-  background-size: 64px 64px; /* Force tile size */
-  height: 150px; /* Fixed height - 100% won't work without parent height */
+  height: 150px;
   width: 100%;
-  border: 3px dashed #0f0; /* Green dashed border to see the box */
 }
 
 footer {
