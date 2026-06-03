@@ -56,6 +56,12 @@ header nav a {
   margin: 0 10px;
 }
 
+.flag-strip {
+  background-image: flag.svg;
+  background-repeat: repeat;
+  display: flex;
+}
+
 footer {
   text-align: center;
   padding: 5px;
