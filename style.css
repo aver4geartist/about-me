@@ -18,5 +18,11 @@ h1 {
 h2 {
   margin: 0;
   font-family: "Playwrite GB J", system-ui, -apple-system, sans-sherif;
-  color: #81c8be;
+  color: #a6da95;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
