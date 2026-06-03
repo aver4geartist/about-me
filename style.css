@@ -6,13 +6,19 @@ header {
   text-align: center;
 }
 body {
+  text-align: center;
   margin: 0;
   font-family: "Open Sans", system-ui, -apple-system, sans-sherif;
   background-color: #24273a;
   color: #cad3f5;
 }
 
+main {
+  flex: 1;
+}
+
 h1, h2 {
+  text-align: center;
   margin: 0;
   font-family: "Playwrite GB J", system-ui, -apple-system, sans-sherif;
   color: #a6e3a1;
@@ -37,7 +43,7 @@ header nav a {
 
 footer {
   text-align: center;
-  margin: 0;
+  padding: 5px;
   font-family: "Datatype", system-ui, -apple-system, sans-sherif;
   color: #6e738d;
   font-size: 0.5rem;
