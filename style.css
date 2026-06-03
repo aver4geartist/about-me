@@ -36,6 +36,7 @@ header nav a {
 }
 
 footer {
+  text-align: center;
   margin: 0;
   font-family: "Datatype", system-ui, -apple-system, sans-sherif;
   color: #6e738d;
