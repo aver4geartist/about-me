@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
-  font-family: open-sans
-  color: #ff0000
+  font-family: "Playwrite GB J", system-ui, -apple-system, sans-serif;
+  background-color: #222;
+  color: #ff0000;
 }
