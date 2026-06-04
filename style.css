@@ -65,21 +65,21 @@ header nav a {
   flex: 1;
 }
 
-/* .thoughts .image-row {
+.thoughts .image-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 10px 0;
   gap: 20px;
-} */
+}
 
-/* .thoughts .image-row img {
+.thoughts .image-row img {
   width: 100%;
   max-width: 250px;
   max-height: 500px;
   border-radius: 5px;
   object-fit: cover;
-} */
+}
 
 .flag-strip {
   background-image: url('flag.svg');
