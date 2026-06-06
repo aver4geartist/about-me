@@ -80,18 +80,18 @@ header nav a {
   border-radius: 5px;
   object-fit: cover;
 }
-
-.thoughts .image-row-r {
+.image-row-r {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: auto;
 }
 
-.thoughts .image-row-r img {
-  width: 25%;
-  max-width: 10px;
-  max-height: 20px;
+.image-row-r img {
+  width: auto%;
+  max-width: 100px;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .flag-strip {
