@@ -90,8 +90,8 @@ header nav a {
 
 .thoughts .image-row-r img {
   width: 25%;
-  max-width: 250px;
-  max-height: 500px;
+  max-width: 10px;
+  max-height: 20px;
 }
 
 .flag-strip {
