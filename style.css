@@ -81,6 +81,18 @@ header nav a {
   object-fit: cover;
 }
 
+.thoughts .image-row-r {
+  display: flex;
+  justify-content: bottom;
+  flex-wrap: wrap;
+}
+
+.thoughts .image-row-r img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 500px;
+}
+
 .flag-strip {
   background-image: url('flag.svg');
   background-repeat: repeat-x;
