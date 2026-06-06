@@ -134,3 +134,37 @@ footer {
   cursor: not-allowed;
   transform: none;
 }
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+  flex: 2;
+  min-width: 250px;
+  text-align: left;
+}
+
+.characters image-row {
+  flex: 1;
+  min-width: 180px;
+  text-align: right;
+}
+
+.characters image-row img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .characters {
+    flex-direction: column;
+    text-align: left;
+  }
+  .characters image-row {
+    text-align: center;
+  }
+}
