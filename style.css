@@ -83,14 +83,16 @@ header nav a {
 
 .thoughts .image-row-r {
   display: flex;
-  justify-content: bottom;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .thoughts .image-row-r img {
   width: 100%;
   max-width: 250px;
   max-height: 500px;
+  object-fit: cover;
 }
 
 .flag-strip {
