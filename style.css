@@ -147,3 +147,24 @@ footer {
   background-color: #000000;
   color: #FF0000;
 }
+
+.returnal header nav a {
+  color: #FF0000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.returnal .image-row {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  gap: 20px;
+}
+
+.returnal .image-row img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 500px;
+  object-fit: cover;
+}
