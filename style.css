@@ -80,6 +80,7 @@ header nav a {
   border-radius: 5px;
   object-fit: cover;
 }
+
 .image-row-r {
   display: flex;
   justify-content: center;
@@ -133,4 +134,31 @@ footer {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
+}
+
+
+.returnal body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  text-align: left;
+  font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+  background-color: #000000;
+  color: #FF0000;
+}
+
+.returnal .image-row {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  gap: 20px;
+}
+
+.returnal .image-row img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 500px;
+  object-fit: cover;
 }
