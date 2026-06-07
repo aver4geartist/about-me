@@ -153,17 +153,3 @@ footer {
   text-decoration: none;
   margin: 0 10px;
 }
-
-.returnal .image-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 0;
-  gap: 20px;
-}
-
-.returnal .image-row img {
-  width: 100%;
-  max-width: 250px;
-  max-height: 500px;
-  object-fit: cover;
-}
