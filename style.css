@@ -156,7 +156,6 @@ footer {
 
 .returnal .image-row {
   display: flex;
-  justify-content: left;
   flex-wrap: wrap;
   margin: 10px 0;
   gap: 20px;
