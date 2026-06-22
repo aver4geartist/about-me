@@ -81,18 +81,21 @@ header nav a {
   object-fit: cover;
 }
 
-.image-row-r {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: auto;
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.image-row-r img {
-  width: auto%;
-  max-width: 250px;
-  max-height: 500px;
-  object-fit: cover;
+.socials img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.socials img:hover {
+    transform: scale(1.15);
 }
 
 .flag-strip {
