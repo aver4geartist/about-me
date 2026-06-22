@@ -84,8 +84,8 @@ header nav a {
 .socials {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 
 .socials img {
