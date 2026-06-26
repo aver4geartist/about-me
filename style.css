@@ -81,23 +81,6 @@ header nav a {
   object-fit: cover;
 }
 
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-.socials img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.2s;
-}
-
-.socials img:hover {
-    transform: scale(1.15);
-}
-
 .flag-strip {
   background-image: url('flag.svg');
   background-repeat: repeat-x;
@@ -137,22 +120,4 @@ footer {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
-}
-
-
-.returnal {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  text-align: center;
-  font-family: "Open Sans", system-ui, -apple-system, sans-serif;
-  background-color: #000000;
-  color: #FF0000;
-}
-
-.returnal header nav a {
-  color: #FF0000;
-  text-decoration: none;
-  margin: 0 10px;
 }
