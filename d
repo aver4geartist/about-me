@@ -1,0 +1,32 @@
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//   <title>forms • average's average website</title>
+//   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+//   <link rel="preconnect" href="https://fonts.googleapis.com">
+//   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+//   <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+//   <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+//   <header> 
+//       <h1>send a message!</h1>
+//       <p>for the love of god do not send venting or harrassment</p>
+//     <nav>
+//       <a href="about.html">about me</a>
+//       <a href="index.html">home</a>
+//       <a href="funfacts.html">funsies</a>
+//     </nav>
+//   </header>
+//   <main>
+//     <section>
+//       <p>here u can send a message through a google forms i made. click the button below to open a new tab with it!<br></p>
+//       <a href="https://forms.gle/ejJjCsjg6hZ1daZn7" target="_blank" rel="noopener noreferrer" class="btn">send a message <3</a>
+//     </section>
+//   </main>
+//   <section class="flag-strip"></section>
+//   <footer>average LLC. copyright 2026 YOU CANNOT HAVE MY USERNAME</footer>
+// </body>
+// </html>
